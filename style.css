@@ -1,0 +1,307 @@
+html, body {
+  margin: 0;
+  padding: 0;
+
+}
+/* Navigation Bar */
+.navigation-bar {
+  background-color: rgb(100, 0, 0);
+  border-bottom: 1px solid #000000;
+  align-items: center;
+  height: 30px;
+  display: flex;
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-left {
+  position: absolute;
+  left: 20px;
+  top: 85%;
+  transform: translateY(-50%);
+}
+
+.logo {
+  height: 150px;
+}
+
+.nav-links {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Main*/
+
+.background-image {
+    width: 100%;
+    height: 400px;
+    background-image: url(./background-image.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: white;
+    position: relative;
+}
+
+.background-image::before {
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.6), transparent);
+    content: "";
+}
+
+.background-content {
+    position: relative;
+    max-width: 450px;
+    z-index: 2;
+}
+
+.background-content p {
+  text-align: justify;
+}
+
+ /* Information about Peter Parker */
+.peter-section {
+  width: 300px;
+  height: auto;
+}
+
+.peters {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+ .peter {
+    width: 300px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+ }
+
+ .peter h3 {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+ }
+
+ .peter img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+ }
+
+ .peter p {
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.4;
+ }
+
+ /* The Amazing Spider-Man */
+ .spiderman-section {
+  width: 320px;
+  height: auto;
+ }
+ 
+ .spiderman {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px 0px;
+  gap: 60px;
+  border-bottom: 2px solid black;
+ }
+
+ .spiderman-img {
+  display: flex;
+  width: 450px;
+  margin-bottom: 0px;
+ }
+
+ .spiderman-description {
+  margin-left: 70px;
+ }
+
+ .spiderman-description h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+ }
+ 
+ .spiderman-description p {
+  text-align: justify;
+  width: 380px;
+  line-height: 1.5;
+  margin-left: 60px;
+ } 
+
+ /*footer*/
+
+ .footer {
+  background-color: rgb(100, 0, 0);
+  font-family: Arial, sans-serif;
+ }
+
+ .footer-top {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 0px 40px;
+  height: 80px;
+ }
+
+ .footer-logo img{
+  padding: 20px 0px 0px 10px;
+  height: 100px;
+  width: auto;
+ }
+
+ .footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+ }
+
+ .footer-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+ }
+
+ .footer-socials a {
+  color: white;
+  margin-left: 15px;
+  font-size: 16px;
+  text-decoration: none;
+ }
+
+ .footer-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 15px 20px;
+  font-size: 12px;
+  color: white;
+}
+/*Page 2*/
+.background {
+    width: 100%;
+    height:400px;
+    background-color: black;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 120px 40px 60px 40px;  
+    box-sizing: border-box;
+}
+
+.background h1 {
+  font-size: 50px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.background img {
+  display: block;
+  width: 400px;
+  height: 280px;
+  border: 2px solid rgb(123, 0, 0);
+  border-radius: 4px;
+}
+/* Challenges Section */
+.section-challenges {
+  width: 400px;
+}
+
+.challenges-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2,1fr);
+  text-align: justify;
+}
+
+.challenges-content h2 {
+  color: rgb(69, 69, 69);
+}
+
+.challenges-spiderman {
+  width: 500px;
+  border: 2px solid rgb(161, 0, 0);
+  border-radius: 4px;
+  margin-left: 20px;
+  margin-top: 115px;
+  grid-row: span 3;
+}
+.challenges-heading {
+  font-size: large;
+  color: rgb(69, 69, 69);
+  font-weight: bold;
+}
+/* Villains Section */
+.section-villains{
+  width: 400px;
+  height: 80px;
+  display: block;
+  margin-left: auto;
+}
+.villains-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.villains-container img {
+  width: 400px;
+  border: 3px  solid green;
+  border-radius: 4px;
+  justify-self: end;
+  margin: 10px;
+}
+ hr {
+  height: 2px;
+  background: black;
+  border: none;
+  margin: 0;
+ }
+ .villains-container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+ }
+
+ .villains-container2 img {
+  width: 700px;
+  margin: 10px;
+ }
+ .villains-container2 h2, p {
+  margin: 20px;
+ }
